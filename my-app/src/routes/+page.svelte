@@ -42,7 +42,8 @@
         let g = Math.floor(Math.random() * 255);
         let b = Math.floor(Math.random() * 255);
 
-        randomColour = 'rgb(${r} ,${g} ${b})';
+        //randomColour = "rgb(" + r + "," + g + "," + b + ")";
+        randomColour = `rgb(${r},${g},${b})`
    }
 
 </script>
@@ -51,12 +52,12 @@
 
 <h1>{writeName()}</h1>
 <!-- HTML - structure -->
-<button on:click={changeColour}>
+<button on:click={changeColour} style="background:{randomColour}">
     Clicked {count} {count == 1 ? 'time' : 'times'}
 </button>
 
-
+<h2> {writeName()}</h2>
 
 <div>
-    (writeName())
+    {writeName()}
 </div>
