@@ -27,9 +27,9 @@
 <p>You can reach Ben at:</p>
 
 <ul>
-  <li><a href= "facebook.com">Website</a></li>
-  <li><a href= "campbf2@student.op.ac.nz">Email</a></li>
-  <li><a href= "0271234567">Phone</a></li>
+  <li><a href= "facebook.com" class = "contact-info">Facebook</a></li>
+  <li><a href= "campbf2@student.op.ac.nz" class = "contact-info">campbf2@student.op.ac.nz</a></li>
+  <li><a href= "0271234567" class = "contact-info">0275996622</a></li>
 </ul>
 
 <button on:click={changeColour} style="background:{randomColour}">
@@ -193,6 +193,11 @@ opacity: 1;
   background-position 800ms ease;
 }
 
+.contact-info{
+  color: white;
+  display: flex;
+  
+}
 /*
 a {
   background-image: linear-gradient(
