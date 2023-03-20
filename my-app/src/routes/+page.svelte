@@ -126,7 +126,6 @@ body{
   font-family: "Franklin Gothic Medium", serif;
   letter-spacing: -0.05em;
 
-
   display: block;
   text-decoration: none;
   padding: clamp(0.25rem, 0.5, 1rem) 0rem;
@@ -147,8 +146,6 @@ body{
 opacity: 1;
 }
 
-
-
 #menu-background-image {
   height: 100%;
   width: 100%;
@@ -160,7 +157,7 @@ opacity: 1;
   top: 0px;
   z-index: 0;
 
-  background-position: center 40%;
+  background-position: center 50%;
   background-size: 100vmax;
   opacity: 0.15;
 
@@ -196,6 +193,7 @@ opacity: 1;
   background-position 800ms ease;
 }
 
+/*
 a {
   background-image: linear-gradient(
     to right,
@@ -231,7 +229,7 @@ a:hover {
 a:hover::before{
   width: 100%;
 }
-
+*/
 </style>
 
 
