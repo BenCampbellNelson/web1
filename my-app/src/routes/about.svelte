@@ -12,3 +12,10 @@
     </div>
 </body>
 </html>
+
+<script context="module">
+    export const metadata = {
+      title: 'About',
+      description: 'This is the about page of my website.'
+    };
+  </script>

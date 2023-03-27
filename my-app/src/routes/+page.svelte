@@ -2,7 +2,7 @@
 <div id ="menu">
   <div id="menu-items">
     <a href="/" class="menu-item">HOME</a>   
-    <a href="/my-app\src\routes\about.html"class="menu-item">ABOUT</a>
+    <a href="my-app\src\routes\about.svelte"class="menu-item">ABOUT</a>
     <a href="/my-app\src\routes\blank.html" class="menu-item">CONTACT</a>
   </div>
   <div class="name">
@@ -20,9 +20,7 @@
   <title>Home</title>
 </head>
 
-
 <h2> {writeName()}</h2>
-
 
 <p>You can reach Ben at:</p>
 
@@ -36,6 +34,7 @@
   Clicked {count} {count == 1 ? 'time' : 'times'}
 </button>
 
+<button on:click={() => goto('/about.html')}>Go to about page</button>
 <body>
   <a href="about.html">About</a>
 </body>
@@ -198,7 +197,7 @@ opacity: 1;
   display: flex;
   
 }
-/*
+
 a {
   background-image: linear-gradient(
     to right,
@@ -234,7 +233,7 @@ a:hover {
 a:hover::before{
   width: 100%;
 }
-*/
+
 </style>
 
 
@@ -243,6 +242,8 @@ a:hover::before{
 
 <!-- JS - functionality -->
 <script>
+
+import { goto } from '$app/navigation';
 
    let count = 0;
    let first_name = "Ben"
